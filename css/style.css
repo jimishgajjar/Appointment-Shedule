@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header-tab {
+    display: flex;
+    align-items: stretch;
+    background-color: #c949a4;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.header-tab div {
+    margin: 25px;
+}
+
+.header img {
+    width: 100%;
+}
+
+.user-tab {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: -50px;
+    display: flex;
+    margin: 0 7% 0 7%;
+    padding: 5% 3% 5% 3%;
+    border-radius: 10px;
+    background-color: #c949a4;
+    color: #fff;
+}
+
+.user-tab .user-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.user-tab .user-name {
+    margin-left: 10px;
+    font-size: 40px;
+}
+
+.content-div {
+    padding: 0 15px 0 15px;
+}
+
+.content-div .content-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.content-div .content-header .content-title {
+    flex-grow: 8;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.content-div .content-header .calender-month {
+    align-items: flex-end;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.content-div .appoinemnt-dates {
+    margin-top: 5%;
+    margin-bottom: 11%;
+    display: flex;
+    min-width: 100%;
+    overflow-x: auto;
+}
+
+.content-div .appoinemnt-dates::-webkit-scrollbar {
+    display: none;
+}
+
+.content-div .appoinemnt-dates .item {
+    text-align: center;
+}
+
+.content-div .appoinemnt-dates .item .item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px 15px 5px 15px;
+    margin: 5px 5px 0px 5px;
+    border: 1px solid #a0a0a0;
+}
+
+.content-div .appoinemnt-dates .item .item-content-active {
+    background-color: #c949a4 !important;
+    color: #fff !important;
+    border: 0px;
+}
+
+.content-div .appoinemnt-dates .item .item-content-active span {
+    color: #fff !important;
+}
+
+.content-div .appoinemnt-dates .item .item-content-deactive {
+    background-color: #e7e7e7 !important;
+    color: #000 !important;
+}
+
+.content-div .appoinemnt-dates .item .item-content {
+    color: black;
+}
+
+.content-div .appoinemnt-dates .item .item-content h2 {
+    margin: 0;
+    font-size: 70px;
+}
+
+.content-div .appoinemnt-dates .item .item-content span {
+    font-size: 25px;
+}
+
+.triangle {
+    position: relative;
+    float: left;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.triangle-bottom {
+    top: -1px;
+    left: 35%;
+    border-width: 10px 10px 0 10px;
+    border-color: #c949a4 transparent transparent transparent;
+}
+
+.content-div .appoinment-time {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-div .appoinment-time .item {
+    padding: 8px;
+    margin: 0 12px 12px 0;
+    font-size: 23px;
+    border: 1px solid #a0a0a0;
+    color: black;
+    border-radius: 5px;
+}
+
+.content-div .appoinment-time .item-active {
+    border: 0px !important;
+    background-color: #c949a4;
+    color: #fff;
+}
+
+.content-div .appoinment-time .item-deactive {
+    border: 0px !important;
+    background-color: #e7e7e7;
+}
+
+.btn {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    font-size: 25px;
+    border: 0px;
+    font-weight: 600;
+    background-color: #fff;
+    text-align: left;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+}
+
+.btn span {
+    width: 90%;
+}
+
+.btn-sub {
+    width: 90%;
+    text-align: center;
+    padding: 15px;
+    margin: 0px 15px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    font-size: 25px;
+    border: 0px;
+    font-weight: 600;
+    background-color: #c949a4;
+    color: #fff;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .content-div .appoinemnt-dates .item .item-content h2 {
+        font-size: 50px;
+    }
+
+    .content-div .appoinemnt-dates .item .item-content span {
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .header-tab {
+        font-size: 23px;
+    }
+
+    .user-tab .user-img {
+        height: 75px;
+        width: 75px;
+    }
+
+    .user-tab .user-name {
+        font-size: 28px;
+    }
+
+    .content-div .content-header .content-title {
+        font-size: 20px;
+    }
+
+    .content-div .content-header .calender-month {
+        font-size: 20px;
+    }
+
+    .content-div .appoinemnt-dates .item .item-content h2 {
+        font-size: 25px;
+    }
+
+    .content-div .appoinemnt-dates .item .item-content span {
+        font-size: 15px;
+    }
+
+    .content-div .appoinment-time .item {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 20px;
+    }
+
+    .btn-sub {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 281px) {
+    .header-tab {
+        font-size: 15px;
+    }
+
+    .user-tab .user-img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .user-tab .user-name {
+        font-size: 22px;
+    }
+
+    .content-div .content-header .content-title {
+        font-size: 15px;
+    }
+
+    .content-div .content-header .calender-month {
+        font-size: 15px;
+    }
+
+    .content-div .appoinemnt-dates .item .item-content h2 {
+        font-size: 20px;
+    }
+
+    .content-div .appoinemnt-dates .item .item-content span {
+        font-size: 10px;
+    }
+
+    .content-div .appoinment-time .item {
+        font-size: 10px;
+    }
+
+    .content-div .appoinment-time .item {
+        margin: 0 8px 8px 0;
+        font-size: 10px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    .btn-sub {
+        font-size: 14px;
+    }
+}
