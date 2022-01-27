@@ -5,6 +5,11 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+a {
+    text-decoration: none !important;
+    color: #000;
+}
+
 .header-tab {
     display: flex;
     align-items: stretch;
@@ -152,6 +157,10 @@ body {
     border: 1px solid #a0a0a0;
     color: black;
     border-radius: 5px;
+}
+
+.content-div .appoinment-time .item-active a{
+    color: #fff;
 }
 
 .content-div .appoinment-time .item-active {
